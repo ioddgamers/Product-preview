@@ -10,4 +10,4 @@ I'm expected to recreate this Desktop and mobile design respectively using HTML 
 
 
 While writing the code for this, I employed the use of multiple flexboxes to facilitate the display of different elements 
-of the design.
+of the design. The live website can be viewed here. https://ioddgamers.github.io/Product-preview/
