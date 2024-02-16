@@ -1,0 +1,245 @@
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*, *::before, *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+    
+img, svg{
+    mix-width: 100%;
+    display: block;
+}
+
+:root {
+    --Dark-cyan: hsl(158, 36%, 37%);
+    --Cream: hsl(30, 38%, 92%);
+    --Very-dark-blue: hsl(212, 21%, 14%);
+    --Dark-grayish-blue: hsl(228, 12%, 48%);
+    --White: hsl(0, 0%, 100%);
+    /*font-family: "Fraunces", serif;*/
+    /*font-family: "Montserrat", sans-serif;*/
+}
+
+body {
+    background-color: var(--Cream);
+    padding: 0;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    background-color: var(--White);
+    justify-content: center;
+    border-radius: 15px;
+    margin: 5%;
+}
+
+.sub-container {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 10px;
+}
+
+.mobile {
+    width: 100%;
+}
+
+.desktop {
+    display: none;
+}
+
+h1 {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: var(--Very-dark-blue);
+    line-height: 30 px;
+}
+
+.price-section {
+    display: flex;
+    align-items: center;
+}
+
+.discount {
+    font-family: "Fraunces", serif;
+    font-weight: 700;
+    color: var(--Dark-cyan);
+    font-size: 35px;
+    display: inline-block;
+}
+
+.price {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    font-size: 12px;
+    text-decoration: line-through;
+    color: var(--Dark-grayish-blue);
+    margin-left: 15px;
+}
+
+P {
+    font-family: "Montserrat", sans-serif;
+    font-weight: 500;
+    color: var(--Dark-grayish-blue);
+    font-size: 14px;
+    line-height: 25px;
+}
+
+p.perfume {
+    letter-spacing: 3px;
+    font-weight: 400;
+}
+button {
+    width: 90%;
+    height: 40px;
+    border: none;
+    border-radius: 10px;
+    color: var(--White);
+    background-color: var(--Dark-cyan);
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    display: flex;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+}
+
+button:hover {
+    background-color: var(--Dark-grayish-blue);
+}
+
+.attribution {
+    margin: auto;
+    text-align: center;
+}
+
+/*====Tablets====*/
+
+@media (min-width:900px) {
+
+    .container {
+        flex-direction: row;
+        margin: 5% 10%;
+        padding: 0;
+        max-width: 80dvh;
+    }
+
+    .sub-container {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+        width: 100%;
+        border-radius: 15px 0 0 15px;
+    }
+
+    h1 {
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        color: var(--Very-dark-blue);
+
+    }
+    
+    .discount {
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        color: var(--Dark-cyan);
+
+    }
+
+    button {
+        width: 50%;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        color: var(--White);
+        background-color: var(--Dark-cyan);
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        align-self: flex-start;
+        justify-content: center;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    button:hover {
+        background-color: var(--Dark-grayish-blue);
+    }
+
+}
+
+
+/*=====Desktop======*/
+
+
+@media (min-width: 1080px) {
+
+    .container {
+        flex-direction: row;
+        margin: 5% auto;
+        padding: 0;
+        max-width: 80dvh;
+    }
+
+    .sub-container {
+        gap: 10px;
+        width: 100%;
+    }
+
+    .mobile {
+        display: none;
+    }
+    .desktop {
+        display: flex;
+        width: 100%;
+        border-radius: 15px 0 0 15px;
+    }
+
+    h1 {
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        color: var(--Very-dark-blue);
+
+    }
+    
+    .discount {
+        font-family: "Fraunces", serif;
+        font-weight: 700;
+        color: var(--Dark-cyan);
+
+    }
+
+    button {
+        width: 70%;
+        height: 40px;
+        border: none;
+        border-radius: 10px;
+        color: var(--White);
+        background-color: var(--Dark-cyan);
+        font-family: "Montserrat", sans-serif;
+        font-weight: 600;
+        align-self: center;
+        justify-content: center;
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    button:hover {
+        background-color: var(--Dark-grayish-blue);
+    }
+
+}
